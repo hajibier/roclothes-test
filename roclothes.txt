@@ -61,7 +61,29 @@
 
 
 
+-- RoClothes Demo v0.7.5-lite
+-- Safe & GitHub-Testable Version
 
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+
+local player = Players.LocalPlayer
+local name = player and player.Name or "Guest"
+
+-- Setup GUI to confirm it's working
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "RoClothesUI"
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0.3, 0, 0.1, 0)
+textLabel.Position = UDim2.new(0.35, 0, 0.45, 0)
+textLabel.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.Text = "RoClothes loaded for: " .. name
+textLabel.Parent = screenGui
+
+print("[RoClothes] GUI initialized for", name)
 
 
 
