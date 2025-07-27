@@ -484,7 +484,7 @@ function RoClothes(Player)
 			CurrentBundle = "nil",
 			AutoExecute = true,
 			DelayTime = 1,
-			Tone = "dark",
+			Tone = "Dark",
 			BundleBodyColor = true,
 			Face = true,
 			MeshSizeLock = false,
